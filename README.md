@@ -13,7 +13,7 @@ Rasa chatbot
 # Run
 Go to directory with anaconda prompt
 
-Check available environments with `conda info --envs`, or create one with `conda create --name 'YourEnvName' python=='version'`. Example `conda create --name RasaInstall python==3.8`
+Check available environments with `conda info --envs`, or create one with `conda create --name 'env-name' python=='version'`. Example `conda create --name RasaInstall python==3.8`
 
 Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
 
