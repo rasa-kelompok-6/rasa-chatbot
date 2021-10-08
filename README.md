@@ -18,3 +18,7 @@ Check available environments with `conda info --envs`, or create one with `conda
 Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
 
 Then run `rasa run`
+
+# Dependencies
+
+* Tensorflow
