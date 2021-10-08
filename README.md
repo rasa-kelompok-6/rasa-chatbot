@@ -12,6 +12,9 @@ Rasa chatbot
 
 ## Run
 > Go to directory with anaconda prompt
+
 > Check available environments with `conda info --envs`
+
 > Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
+
 > then run `rasa run`
