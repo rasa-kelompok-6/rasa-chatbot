@@ -11,7 +11,9 @@ Rasa chatbot
 [Any other OS](https://docs.anaconda.com/anaconda/install/)
 
 # Run
-Go to directory with anaconda prompt
+Open anaconda prompt
+
+Go to target directory with anaconda prompt
 
 Check available environments with `conda info --envs`, or create one with `conda create --name 'env-name' python=='version'`. Example `conda create --name RasaInstall python==3.8`
 
