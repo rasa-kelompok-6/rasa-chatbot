@@ -6,7 +6,7 @@ Rasa chatbot
 
 ## Install anaconda
 
-[windows](https://www.anaconda.com/products/individual#windows)
+[Windows](https://www.anaconda.com/products/individual#windows)
 
 [Any other OS](https://docs.anaconda.com/anaconda/install/)
 
@@ -17,9 +17,9 @@ Check available environments with `conda info --envs`, or create one with `conda
 
 Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
 
-Run `conda install json`, `conda install tensorflow`, and `pip install rasa`
+If you create a new environment, run `conda install json`, `conda install tensorflow`, and `pip install rasa`
 
-Then run `rasa run`
+Otherwise, just run `rasa run`
 
 # Dependencies
 
