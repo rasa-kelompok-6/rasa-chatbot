@@ -21,7 +21,7 @@ Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
 
 If you create a new environment, run `conda install json`, `conda install tensorflow`, and `pip install rasa`. And then initialize with `rasa init`
 
-Otherwise, just run `rasa run`
+Otherwise, just run `rasa shell`
 
 # Dependencies
 
