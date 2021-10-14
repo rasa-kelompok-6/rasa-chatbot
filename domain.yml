@@ -3,6 +3,7 @@ version: "2.0"
 intents:
   - salam
   - help
+  - akhiri
   - tanya_bentuk_putus_studi
   - tanya_bentuk_putus_studi_undur
   - tanya_bentuk_putus_studi_do
