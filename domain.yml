@@ -2,7 +2,7 @@ version: "2.0"
 
 intents:
   - salam
-  - tanya_list_command
+  - help
   - tanya_bentuk_putus_studi
   - tanya_bentuk_putus_studi_undur
   - tanya_bentuk_putus_studi_do
