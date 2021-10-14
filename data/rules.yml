@@ -1,4 +1,4 @@
-RULES : Masukin aturan ketika user ngomong ini maka respon yang diberikan Chatbot adalah ini
+# RULES : Masukin aturan ketika user ngomong ini maka respon yang diberikan Chatbot adalah ini
 
 version: "2.0"
 
@@ -9,9 +9,19 @@ rules:
   - intent: salam
   - action: utter_salam
 
-- rule: Jawab Terimakasih setiap user menjawab selesai
+# - rule: Jawab Terimakasih setiap user menjawab selesai
+#   steps:
+#   - intent: selesai
+#   - action: utter_terimakasih
+
+- rule: Memberikan list apa saja yang bisa diutarakan
   steps:
-  - intent: selesai
+  - intent: help
+  - action: utter_tanya_list_command
+
+- rule: Akhiri Percakapan
+  steps:
+  - intent: akhiri
   - action: utter_terimakasih
 
 - rule: Berkata 'Saya adalah Bot' setiap user bertanya siapa saya?

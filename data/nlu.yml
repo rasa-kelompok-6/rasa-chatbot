@@ -1,5 +1,3 @@
-NLU : untuk masukin kemungkinan pertanyaan dari user
-
 version: "2.0"
 
 nlu:
@@ -17,6 +15,18 @@ nlu:
     - selamat siang
     - selamat sore
     - selamat malam
+
+- intent: help
+  examples: |
+    - help
+    - lihat list
+    - lihat list pertanyaan
+    - pertanyaannya apa saja
+    - apa saja pertanyaannya
+    - lihat pertanyaan
+    - bisa tanya apa saja?
+    - boleh bertanya tidak
+    - bisa tolong bertanya ?
 
 - intent: tanya_bentuk_putus_studi
   examples: |
@@ -156,3 +166,18 @@ nlu:
     - tidak ada terimakasih
     - cukup terimakasih
     - sudah, terimakasih
+
+- intent: akhiri
+  examples: |
+    - bye
+    - sampai jumpa
+    - c u
+    - see you later
+    - semoga harimu menyenangkan
+    - dada
+    - dah
+    - dadah
+    - oke cukup
+    - oke itu saja
+    - itu saja
+    - sekian

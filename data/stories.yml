@@ -1,5 +1,3 @@
-STORIES : mengatur jalan cerita per scene dari Chatbot. Ada intent dan action
-
 version: "2.0"
 
 stories:
@@ -65,16 +63,18 @@ stories:
   - action: utter_jawab_ketentuan_pencegahan_plagiasi
   - action: utter_bantu_lagi
 
-- story: User bertanya mengenai chatbot
-  steps:
-  - intent: salam
-  - action: utter_salam
-  - intent: bot_challenge
-  - action: utter_iamabot
-  - action: utter_bantu_lagi
-  - intent: selesai
-  - action: utter_terimakasih
+# rule berkata saya adalah bot -> predicted listen
+# - story: User bertanya mengenai chatbot
+#   steps:
+#   - intent: salam
+#   - action: utter_salam
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+#   - action: utter_bantu_lagi
+#   - intent: selesai
+#   - action: utter_terimakasih
 
+# utter_bantu_lagi contradicted with rule Jawab terimakaish , utter_terimakasih
 - story: User bertanya mengenai bentuk putus studi dilanjutkan pindah ke perguruan tinggi lain
   steps:
   - intent: tanya_bentuk_putus_studi
@@ -85,6 +85,7 @@ stories:
   - action: utter_jawab_pindah_unsri_Ke_ptn_lain
   - action: utter_bantu_lagi
 
+# rule jawab terima kasih -> predicted utter_terima kasih
 - story: User bertanya mengenai bentuk putus studi dilanjutkan larangan
   steps:
   - intent: tanya_bentuk_putus_studi
@@ -95,6 +96,7 @@ stories:
   - action: utter_jawab_larangan
   - action: utter_bantu_lagi
 
+# jawab terima kasih predicted utter_terimakasih
 - story: User bertanya mengenai bentuk putus studi dilanjutkan pencegahan tindakan plagiasi
   steps:
   - intent: tanya_bentuk_putus_studi
@@ -132,6 +134,7 @@ stories:
   - action: utter_jawab_ketentuan_pencegahan_plagiasi
   - action: utter_bantu_lagi
 
+# rule jawab terima kasih, predicted utter_terimakasih
 - story: User bertanya mengenai bentuk putus studi dilanjutkan pindah ke perguruan tinggi lain, dilanjutkan larangan, dilanjutkan pencegahan tindakan plagiasi
   steps:
   - intent: tanya_bentuk_putus_studi
