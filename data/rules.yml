@@ -1,13 +1,20 @@
+RULES : Masukin aturan ketika user ngomong ini maka respon yang diberikan Chatbot adalah ini
+
 version: "2.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Jawab Salam setiap user mengatakan salam
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: salam
+  - action: utter_salam
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Jawab Terimakasih setiap user menjawab selesai
+  steps:
+  - intent: selesai
+  - action: utter_terimakasih
+
+- rule: Berkata 'Saya adalah Bot' setiap user bertanya siapa saya?
   steps:
   - intent: bot_challenge
   - action: utter_iamabot

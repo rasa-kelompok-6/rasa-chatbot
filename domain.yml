@@ -1,33 +1,124 @@
+DOMAIN : Masukin label intent dan text dari respon Chatbot
+
 version: "2.0"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+  - salam
+  - tanya_bentuk_putus_studi
+  - tanya_bentuk_putus_studi_undur
+  - tanya_bentuk_putus_studi_do
+  - tanya_bentuk_putus_studi_diberhentikan
+  - tanya_pindah_unsri_Ke_ptn_lain
+  - tanya_larangan
+  - tanya_ketentuan_pencegahan_plagiasi
   - bot_challenge
+  - selesai
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_salam:
+  - text: "Hallo Selamat Datang di FAQ Pedoman Akademik UNSRI 2021.\n
+           Ada yang bisa saya bantu?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_bantu_lagi:
+  - text: "Ada yang bisa saya bantu lagi?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_jawab_bentuk_putus_studi:
+  - text: "Mahasiswa yang keluar atau putus studi dari Universitas Sriwijaya sebelum lulus dapat merupakan :\n 
+            1) Mahasiswa yang mengundurkan diri.\n
+            2) Mahasiswa yang dinyatakan putus studi (drop out).\n 
+            3) Mahasiswa yang diberhentikan/dikeluarkan dari Universitas Sriwijaya.\n
+           Untuk deskripsi selengkapnya, silahkan Anda pilih putus studi bagian apa?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_jawab_bentuk_putus_studi_undur:
+  - text: "Bentuk Putus Studi untuk Mahasiswa yang Mengundurkan Diri dari Universitas Sriwijaya adalah :\n
+            a. Mahasiswa yang mengajukan permohonan pengunduran diri tertulis kepada Dekan Fakultas/Direktur Program Pascasarjana 
+               dengan tembusan ke koordinator program studi karena alasan masing-masing termasuk sakit berkepanjangan.\n
+            b. Mahasiswa yang mengundurkan diri ditetapkan dengan surat keputusan Rektor Universitas Sriwijaya 
+               berdasarkan usulan dari Dekan Fakultas/Direktur Program Pascasarjana.\n
+           Mahasiswa yang keluar dari Universitas Sriwijaya karena mengundurkan diri, tidak dapat diterima
+           kembali untuk menjadi mahasiswa di Universitas Sriwijaya."
+  
+  utter_jawab_bentuk_putus_studi_do:
+  - text: "Bentuk Putus Studi untuk Mahasiswa yang dinyatakan Putus Studi (Drop Out) dari Universitas Sriwijaya adalah :\n
+            a. Mahasiswa yang memenuhi kriteria putus studi sesuai ketentuan.\n
+            b. Mahasiswa yang dinyatakan putus studi (drop out) ditetapkan secara otomatis melalui
+               sistem Informasi Teknologi (IT) dan dapat juga dengan surat keputusan Rektor Universitas Sriwijaya.\n
+           Mahasiswa yang keluar dari Universitas Sriwijaya karena putus studi (drop out), tidak dapat diterima
+           kembali untuk menjadi mahasiswa di Universitas Sriwijaya."
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_jawab_bentuk_putus_studi_diberhentikan:
+  - text: "Bentuk Putus Studi untuk Mahasiswa yang Diberhentikan/dikeluarkan dari Universitas Sriwijaya adalah :\n
+            a. Mahasiswa yang dinyatakan berhenti dari Universitas Sriwijaya karena melanggar Etika Akademik, 
+               melakukan perbuatan tercela melanggar Norma & Moral, mencemarkan nama baik Universitas Sriwijaya, 
+               membuat keonaran memprovokasi dan menghasut dalam kampus, terlibat Narkoba, 
+               terlibat perbuatan kriminal dan asusila, melakukan pelanggaran berat berdasarkan ketentuan-ketentuan 
+               yang ditetapkan di bidang kemahasiswaan Universitas Sriwijaya.\n
+            b. Mahasiswa yang dinyatakan dikeluarkan (drop out) ditetapkan secara otomatis melalui
+               sistem Informasi Teknologi (IT) dan dapat juga dengan surat keputusan Rektor Universitas Sriwijaya.\n
+           Mahasiswa yang keluar dari Universitas Sriwijaya karena diberhentikan/dikeluarkan, tidak dapat diterima
+           kembali untuk menjadi mahasiswa di Universitas Sriwijaya."
+
+  utter_jawab_pindah_unsri_Ke_ptn_lain:
+  - text: "Perpindahan dapat dilakukan oleh mahasiswa dengan memenuhi ketentuan sebagai berikut :\n
+            a. Mahasiswa berstatus aktif dan terdaftar pada semester yang sedang berjalan dan
+               sedikitnya telah mengikuti kegiatan akademik selama 2 semester.\n
+            b. Mahasiswa mengajukan permohonan pindah ke perguruan tinggi lain kepada koordinator prodi 
+               yang diteruskan kepada Dekan Fakultas/Direktur Program Pascasarjana untuk diteruskan kepada Rektor.\n
+            c. Mahasiswa yang telah disetujui pengunduran dirinya dari Universitas Sriwijaya untuk pindah 
+               ke perguruan tinggi lain tidak dapat pindah kembali atau mendaftar kembali untuk menjadi 
+               mahasiswa Universitas Sriwijaya.\n
+            d. Mahasiswa yang telah memasuki batas akhir masa studi di Universitas Sriwijaya,
+               pengusulan perpindahan/pengunduran diri hanya dapat dilakukan paling lambat 3 bulan sebelum 
+               berakhirnya masa studi di Universitas Sriwijaya."
+
+  utter_jawab_larangan:
+  - text: "Mahasiswa dilarang :\n
+            1. Melakukan perbuatan/aktivitas/provokasi yang berpotensi dapat menimbulkan hambatan terhadap 
+               kegiatan akademik maupun kekacauan dalam kampus termasuk menyalahgunakan dan memasang lambang/atribut 
+               terlarang di lingkungan kampus Universitas Sriwijaya.\n
+            2. Melakukan pelanggaran ketentuan akademik berupa pelanggaran etika penulisan atau tindakan pidana 
+               plagiarisme/duplikasi dalam kegiatan akademik maupun riset/penelitian untuk skripsi/thesis/disertasi 
+               atau publikasi di Universitas Sriwijaya.\n
+            3. Mengganggu atau menghalangi kegiatan akademik maupun kegiatan lainnya, baik yang dilakukan 
+               secara struktural (organisasi) maupun non-struktural.\n
+            4. Melakukan perbuatan yang melanggar etika, moral, pelecehan seksual, perudungan (bullying) dan 
+               anarkis baik yang dilakukan secara perorangan, struktural (organisasi) maupun non-struktural.\n
+            5. Melakukan tindakan kriminal/mencuri dan berkelahi sehingga membuat kerusuhan.\n
+            6. Melakukan tindakan propaganda, provokasi atau menghasut masyarakat.\n
+            7. Membuat kegiatan yang melanggar ketentuan dan tata tertib yang berlaku di Universitas/Fakultas/Program Studi.\n
+            8. Melakukan Perjokian atau meminta seseorang melakukan Perjokian untuk kegiatan ujian/pelatihan 
+               yang dilakukan oleh Universitas Sriwijaya.\n
+            9. Terlibat sebagai pengguna, bandar, penyedia, pemberi, kurir, fasilitasi, ataupun penganjur penggunaan 
+               narkoba/nafza, minum-minuman keras atau zat adiktif lainnya baik didalam maupun diluar kampus Universitas Sriwijaya.
+               Pemeriksaan terhadap penggunaan/kepemilikan/kesediaan narkoba/nafza akan dilakukan secara periodik
+               ataupun check spot secara mendadak.\n
+            10. Mahasiswa Universitas Sriwijaya dilarang menjadi anggota atau simpatisan :\n
+                 a. Organisasi yang bersifat makar ataupun organisasi yang mengganggu/mengancam keselamatan 
+                    negara kesatuan Republik Indonesia.\n
+                 b. Organisasi yang melanggar hukum agama dan atau norma susila seperti organisasi penyimpangan agama/sekte, 
+                    organisasi yang mendukung/melakukan tindakan kekerasan/kekejaman, organisasi perbuatan seksual menyimpang,
+                    termasuk organisasi yang terkait perilaku Lesbian, Gay, Biseksual, dan Transgender (LGBT)."
+
+  utter_jawab_ketentuan_pencegahan_plagiasi:
+  - text: "Dalam upaya mencegah tindakan plagiasi, maka sebelum mahasiswa yudisium, naskah proyek akhir/skripsi/tesis/disertasi 
+           dan naskah ilmiah untuk publikasi harus melalui tahap pemeriksaan kesamaan/kemiripan (similarity checking).\n
+           Adapun ketentuan akademik yang berlaku adalah sebagai berikut :\n
+            a. Pemeriksaan kesamaan/kemiripan naskah (similarity checking) menggunakan aplikasi Ithenticate dan/atau Turnitin 
+               yang dilakukan sebelum yudisium.\n
+            b. Bagian metodologi penelitian skripsi/tesis/disertasi yang merupakan prosedur baku pengujian/pengambilan data 
+               dan pengolahan statistika diuraikan pada bagian lampiran skripsi/tesis/disertasi, sehingga tidak termasuk bagian 
+               yang diperiksa kesamaan/kemiripan naskahnya. Pembimbing/promotor memastikan integritas akademik pada bagian ini.\n
+            c. Tingkat kemiripan/kesamaan untuk skripsi/tesis/disertasi maksimum 20%. Apabila tingkat kemiripan/kesamaan 
+               lebih dari 20%, maka mahasiswa harus memperbaiki naskah skripsi/tesis/disertasinya dalam bimbingan pembimbing/promotor.\n
+            d. Hasil pemeriksaan kesamaan/kemiripan naskah (similarity checking) dilampirkan pada skripsi/tesis/disertasi.\n
+            e. Ketentuan tingkat kemiripan/kesamaan draft artikel ilmiah yang akan dipublikasi mengikuti ketentuan 
+               pengelola jurnal/prosiding yang dituju. "
+
+  utter_terimakasih:
+  - text: "Baik Terima kasih! Bye..."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Saya adalah Bot yang dibuat menggunakan Framework Rasa."
 
 session_config:
   session_expiration_time: 60

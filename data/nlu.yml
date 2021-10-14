@@ -1,92 +1,158 @@
+NLU : untuk masukin kemungkinan pertanyaan dari user
+
 version: "2.0"
 
 nlu:
-- intent: greet
+- intent: salam
   examples: |
+    - assalamualaikum
     - hey
+    - hai
     - hello
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - halo
+    - halo kak
+    - halo admin
+    - selamat pagi
+    - selamat siang
+    - selamat sore
+    - selamat malam
 
-- intent: goodbye
+- intent: tanya_bentuk_putus_studi
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - saya ingin bertanya tentang bentuk putus studi seperti apa?
+    - apa saja bentuk putus studi di universitas sriwijaya?
+    - apa saja bentuk putus studi di unsri?
+    - bentuk putus studi di universitas sriwijaya
+    - bentuk putus studi di unsri
+    - mau tau putus studi di universitas sriwijaya gimana?
+    - mau tau putus studi di unsri gimana?
+    - bentuk putus studi di unsri gimana ya?
+    - apa aja bentuk putus studi di unsri?
+    - saya mau nanya bentuk putus studi di unsri bagaimana ya?
 
-- intent: affirm
+- intent: tanya_bentuk_putus_studi_undur
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - 1
+    - bagian 1
+    - kalau untuk mahasiswa yang mengundurkan diri bagaimana?
+    - untuk mahasiswa yang mengundurkan diri gimana?
+    - Mahasiswa yang mengundurkan diri
+    - mengundurkan diri
+    - undur diri
+    - nomor 1
+    - no 1
+    - yang 1
+    - yang bagian 1
+    - satu
 
-- intent: deny
+- intent: tanya_bentuk_putus_studi_do
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - 2
+    - bagian 2
+    - kalau untuk mahasiswa yang drop out bagaimana?
+    - untuk mahasiswa yang drop out gimana?
+    - kalau untuk mahasiswa yang do bagaimana?
+    - untuk mahasiswa yang do gimana?
+    - Mahasiswa yang dinyatakan putus studi (drop out)
+    - drop out
+    - do
+    - DO
+    - nomor 2
+    - no 2
+    - yang 2
+    - yang bagian 2
+    - dua
+    - mahasiswa do
 
-- intent: mood_great
+- intent: tanya_bentuk_putus_studi_diberhentikan
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - 3
+    - bagian 3
+    - kalau untuk mahasiswa yang diberhentikan bagaimana?
+    - untuk mahasiswa yang diberhentikan gimana?
+    - kalau untuk mahasiswa yang dikeluarkan bagaimana?
+    - untuk mahasiswa yang dikeluarkan gimana?
+    - kalau untuk mahasiswa yang diberhentikan/dikeluarkan bagaimana?
+    - untuk mahasiswa yang diberhentikan/dikeluarkan gimana?
+    - Mahasiswa yang diberhentikan/dikeluarkan dari Universitas Sriwijaya
+    - yang diberhentikan
+    - yang dikeluarkan unsri
+    - diberhentikan unsri
+    - diberhentikan universitas sriwijaya
+    - dikeluarkan unsri
+    - dikeluarkan universitas sriwijaya
+    - diberhentikan/dikeluarkan unsri
+    - nomor 3
+    - no 3
+    - yang 3
+    - yang bagian 3
+    - tiga
 
-- intent: mood_unhappy
+- intent: tanya_pindah_unsri_Ke_ptn_lain
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - bagaimana cara perpindahan mahasiswa ke perguruan tinggi lain?
+    - tata cara perpindahan mahasiswa ke perguruan tinggi lain
+    - cara pindah dari unsri ke kampus lain?
+    - cara pindah dari unsri ke ptn lain?
+    - cara pindah dari unsri ke perguruan tinggi lain?
+    - perpindahan mahasiswa dari unsri ke ptn lain
+    - bagaimana cara perpindahan mahasiswa ke ptn lain?
+    - bagaimana cara perpindahan mahasiswa ke kampus lain?
+    - tata cara perpindahan mahasiswa ke ptn lain
+    - tata cara perpindahan mahasiswa ke kampus lain
+
+- intent: tanya_larangan
+  examples: |
+    - larangan apa saja yang tidak boleh dilanggar di universitas sriwijaya?
+    - larangan apa saja yang tidak boleh dilanggar di unsri?
+    - larangan mahasiswa di universitas sriwijaya
+    - larangan mahasiswa di unsri
+    - apa saja larangan mahasiswa di universitas sriwijaya?
+    - apa saja larangan mahasiswa di unsri?
+    - apa saja yang tidak boleh dilanggar mahasiswa unsri?
+    - apa saja yang tidak boleh dilanggar mahasiswa universitas sriwijaya?
+    - larangan-larangan di unsri
+    - larangan2 di unsri
+    - hal yang tidak boleh dilakukan di universitas sriwijaya?
+    - hal-hal yang tidak boleh dilakukan di universitas sriwijaya?
+    - hal yang tidak boleh dilakukan di unsri?
+    - hal-hal yang tidak boleh dilakukan di unsri?
+
+- intent: tanya_ketentuan_pencegahan_plagiasi
+  examples: |
+    - terkait plagiasi di universitas sriwijaya bagaimana?
+    - tentang tindakan plagiasi di univeristas sriwijaya
+    - tentang tindakan plagiasi di unsri
+    - tentang plagiasi di unsri
+    - ketentuan plagiasi di universitas sriwijaya
+    - ketentuan plagiasi di unsri
+    - pencegahan tindakan plagiasi di universitas sriwijaya
+    - pencegahan tindakan plagiasi di unsri
+    - peraturan tentang tindakan plagiasi di universitas sriwijaya
+    - peraturan tentang tindakan plagiasi di unsri
+    - bagaimana tentang plagiasi?
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - siapa kamu?
+    - dengan siapa saya bicara?
+    - siapa anda?
+    - anda siapa?
+    - kamu siapa?
+    - apakah kamu bot?
+    - apakah anda bot?
+    - apakah anda manusia?
+    - apakah sat ini saya bicara dengan bot?
+    - apakah saat ini saya bicara dengan manusia?
+
+- intent: selesai
+  examples: |
+    - tidak
+    - tidak ada
+    - cukup
+    - sudah
+    - tidak terimakasih
+    - tidak ada terimakasih
+    - cukup terimakasih
+    - sudah, terimakasih
