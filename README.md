@@ -26,3 +26,8 @@ Otherwise, just run `rasa shell`
 # Dependencies
 
 * Tensorflow
+
+# TODO
+
+* Add test stories
+* Complete the data
