@@ -21,10 +21,10 @@ responses:
 
   utter_tanya_list_command:
   - text: "Pertanyaan tentang ketentuan UNSRI™ yang dapat anda ajukan adalah :\n
-            1) Tentang keluar atau putus studi dari Universitas Srijiwaya
-            2) Tentang pindah untuk mahasiswa Universitas Sriwijaya
-            3) Larangan-larangan pada Universitas Srijiwaya
-            4) Tentang plagiasi pada Universitas Sriwijaya"
+            a. Tentang keluar atau putus studi dari Universitas Srijiwaya\n
+            b. Tentang pindah untuk mahasiswa Universitas Sriwijaya\n
+            c. Larangan-larangan pada Universitas Srijiwaya\n
+            d. Tentang plagiasi pada Universitas Sriwijaya"
 
   utter_bantu_lagi:
   - text: "Ada yang bisa saya bantu lagi?"
