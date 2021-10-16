@@ -11,20 +11,32 @@ intents:
   - tanya_pindah_unsri_Ke_ptn_lain
   - tanya_larangan
   - tanya_ketentuan_pencegahan_plagiasi
+  - tanya_stop_out
+  - tanya_ketentuan_bagi_mahasiswa_pindahan
+  - tanya_hak_mahasiswa
+  - tanya_peringatan_dan_sanksi
+  - tanya_predikat_kelulusan
   - bot_challenge
   - selesai
 
 responses:
   utter_salam:
-  - text: "Hallo Selamat Datang di FAQ Pedoman Akademik UNSRI 2021.\n
-           Ada yang bisa saya bantu? Ketik help untuk melihat list pertanyaan yang bisa anda ajukan"
+  - text: |
+            Hallo Selamat Datang di FAQ Pedoman Akademik UNSRI 2021.
+            
+            Ada yang bisa saya bantu? Ketik help untuk melihat list pertanyaan yang bisa anda ajukan
 
   utter_tanya_list_command:
   - text: "Pertanyaan tentang ketentuan UNSRI™ yang dapat anda ajukan adalah :\n
-            a. Tentang keluar atau putus studi dari Universitas Srijiwaya\n
-            b. Tentang pindah untuk mahasiswa Universitas Sriwijaya\n
-            c. Larangan-larangan pada Universitas Srijiwaya\n
-            d. Tentang plagiasi pada Universitas Sriwijaya"
+            - Tentang keluar atau putus studi dari Universitas Srijiwaya\n
+            - Tentang pindah untuk mahasiswa Universitas Sriwijaya\n
+            - Larangan-larangan pada Universitas Srijiwaya\n
+            - Tentang plagiasi pada Universitas Sriwijaya\n
+            - Tentang Stop-out di Universitas Sriwijaya\n
+            - Tentang ketentuan mahasiswa pindahan\n
+            - Tentang hak mahasiswa Universitas Sriwijaya\n
+            - Tentang Peringatan dan Sanski di Universitas Sriwijaya\n
+            - Tentang Predikat Kelulusan"
 
   utter_bantu_lagi:
   - text: "Ada yang bisa saya bantu lagi?"
@@ -121,6 +133,200 @@ responses:
             e. Ketentuan tingkat kemiripan/kesamaan draft artikel ilmiah yang akan dipublikasi mengikuti ketentuan 
                pengelola jurnal/prosiding yang dituju. "
 
+  utter_jawab_stop_out:
+   - text: "Ketentuan PKA atau SO adalah sebagai berikut:\n
+            a. Permohonan PKA atau SO dapat diajukan mahasiswa dengan alasan kesehatan/sakit dengan
+            surat keterangan resmi dari dokter atau alasan lain yang telah mendapat persetujuan dosen PA.\n
+            b. Permohonan pengajuan PKA atau SO hanya dapat dilakukan apabila mahasiswa telah
+            menempuh minimal 4 semester untuk program sarjana, atau telah menempuh minimal 50%
+            dari total sks yang wajib ditempuh pada program studinya.\n
+            c. Permohonan PKA atau SO diusulkan mahasiswa kepada Dekan/Direktur, diketahui oleh
+            dosen PA dan koordinator program studi, selambat-lambatnya pada minggu ketiga setelah
+            semester berjalan dimulai.\n
+            d. Permohonan PKA atau SO tersebut disampaikan ke Rektor oleh Dekan/Direktur.\n
+            e. Rektor menerbitkan surat keputusan izin atau menolak permohonan PKA/SO mahasiswa.\n
+            f. Apabila SK Rektor Universitas Sriwijaya tentang mahasiswa yang dinyatakan PKA/SO pada
+            semester berjalan telah terbit, maka permohonan untuk PKA/SO yang diajukan setelah itu
+            dalam semester berjalan tidak dapat dikabulkan, kecuali bagi mahasiswa dengan alasan sakit
+            yang mendapat keterangan dari dokter.\n
+            g. Masa studi mahasiswa memperhitungkan masa PKA/SO mahasiswa (lama PKA atau SO
+            diperhitungkan sebagai masa studi).\n
+            h. Permohonan PKA atau SO tidak dapat diajukan oleh mahasiswa penerima beasiswa
+            Bidikmisi, atau oleh mahasiswa program Diploma Tiga, Sarjana, Magister atau Doktor yang
+            menerima beasiswa penuh (full scholarship).\n
+            i. Seluruh mahasiswa pascasarjana penerima beasiswa tidak dapat mengajukan cuti kuliah
+            selama dalam rentang waktu penerimaan beasiswa.\n
+            j. Pada masa PKA atau SO, mahasiswa tidak membayar Uang Kuliah Tunggal (UKT) dan tidak
+            berhak melakukan kegiatan akademik, menggunakan fasilitas pendidikan, dan atau
+            mendapat layanan bimbingan akademik dari dosen pembimbing.\n
+            k. Lama PKA atau SO maksimum 1 (satu) semester bagi program Diploma dan Program
+            Sarjana.\n
+            l. Lama PKA atau SO maksimum 2 (dua) semester Program Magister dan Program Doktor,
+            yang dapat diambil berturut-turut atau terpisah.\n
+            m. Mahasiswa program profesi dan spesialis tidak diperkenankan mengajukan permohonan PKA
+            atau SO, hanya diperkenankan mengajukan izin meninggalkan kuliah karena alasan penting,
+            dan tetap membayar Uang Kuliah Tunggal (UKT)."
+
+  utter_jawab_ketentuan_bagi_mahasiswa_pindahan:
+   - text: "Ketentuan Bagi Mahasiswa Pindahan adalah sebagai berikut:\n
+      a. Mahasiswa pindahan dikenakan ketentuan-ketentuan akademik, kurikulum, jangka
+      masa studi, dan ketentuan administrasi keuangan yang berlaku di Universitas
+      Sriwijaya.\n
+      b. Masa studi bagi mahasiswa pindahan mengikuti perhitungan batas waktu program
+      studi yang berlaku di Universitas Sriwijaya dengan dihitung sejak terdaftar pada
+      perguruan tinggi asal.\n
+      c. Tersedianya tempat pada Program Studi yang dituju.\n
+      d. Universitas Sriwijaya hanya dapat menerima mahasiswa pindahan pada setiap awal
+      semester ganjil."
+
+  utter_jawab_hak_mahasiswa:
+   - text:
+      "Setiap mahasiswa aktif mempunyai hak yang sama untuk memperoleh layanan akademik yaitu:\n
+      1. Menggunakan kebebasan akademik secara bertanggung jawab untuk menuntut ilmu
+      dan mengkajinya sesuai dengan norma, etika, dan susila yang berlaku dalam
+      lingkungan akademik.\n
+      2. Memperoleh pengajaran sebaik-baiknya dan layanan bidang akademik sesuai
+      dengan minat, bakat, kegemaran dan kemampuan.\n
+      3. Mendapatkan bimbingan dari pembimbing akademik dan atau dosen lain yang
+      ditugaskan.\n
+      4. Memperoleh layanan informasi yang berkaitan program pendidikan yang diikutinya
+      serta layanan konseling dan pengembangan karir.\n
+      5. Menyelesaikan studi lebih awal dari jadwal yang ditetapkan sesuai dengan
+      persyaratan yang berlaku.\n
+      6. Memperoleh layanan kesejahteraan berupa beasiswa uang pembinaan bagi
+      mahasiswa berprestasi sesuai dengan ketentuan yang berlaku.\n
+      7. Memanfaatkan sumber daya Universitas, Fakultas, dan Program studi untuk
+      kelancaran proses belajar mengajar serta pengembangan minat dan bakat melalui
+      organisasi kemahasiswaan.\n
+      8. Pindah ke perguruan tinggi (PT) lain atau program studi lain, bilamana memenuhi
+      persyaratan yang ditetapkan.\n
+      9. Mengikuti perkuliahan di luar Universitas Sriwijaya maksimal 2 semester atau setara
+      dengan 40 sks serta 1 semester atau setara 20 sks pada program studi yang berbeda
+      di Universitas Sriwijaya.\n
+      10. Mengikuti perlombaan/kejuaraan tingkat Fakultas, Universitas, nasional, regional, dan
+      internasional.\n
+      11. Ikut serta dalam kegiatan organisasi kemahasiswaan di tingkat Universitas, Fakultas,
+      Jurusan, dan atau Prodi (ketentuan mengenai organisasi kemahasiswaan diatur lebih
+      lanjut melaui peraturan Rektor Universitas Sriwijaya."
+   
+  utter_jawab_peringatan_dan_sanksi:
+   - text:
+      "Peringatan dan Sanksi bagi mahasiswa Universitas Sriwijaya sebagai berikut:\n
+      1. Pelanggaran terhadap ketentuan, peraturan, dan larangan yang telah ditetapkan
+      oleh Universitas, Fakultas dan Jurusan termasuk berperilaku buruk dan atau
+      merusak, mahasiswa dikenai sanksi sesuai ketentuan yang berlaku berupa
+      pemberian peringatan, skorsing, hingga pemecatan/diberhentikan sebagai
+      mahasiswa oleh Universitas Sriwijaya.\n
+      2. Pelanggaran terhadap ketentuan etika dan kejujuran akademik merupakan
+      pelanggaran integritas akademik dan merupakan tindakan pelanggaran berat.
+      Pelanggaran integritas akademik dapat berupa tindakan plagiasi, fasifikasi data, fabrikasi data dan atau tindakan tercela lainnya dalam hal akademik. Sanksi untuk
+      pelanggaran ini adalah:\n
+      a. Sanksi untuk tindakan kecurangan akademik dalam proses pembelajaran mata
+      kuliah seperti kecurangan dalam pembuatan tugas atau ujian adalah pemberian
+      peringatan kepada mahasiswa, pemberian nilai nol untuk tugas/ujian tersebut,
+      hingga sanksi berupa pembatalan mahasiswa dari kesertaan pada mata kuliah
+      tersebut, atau sanksi lain yang bersifat mendidik. Sanksi pembatalan mahasiswa
+      dari kesertaan pada mata kuliah ditetapkan dalam rapat program studi
+      dilaporkan koordinator program studi kepada Dekan Fakultas/Direktur
+      Pascasarjana.\n
+      b. Pelanggaran integritas akademik pemalsuan data dan bukti akademik, atau
+      pelanggaran etika akademik pada tugas akhir program (praktik lapang/kerja
+      praktik, KKN/KKN Tematik, skripsi, tesis, disertasi dan publikasi ilmiah)
+      merupakan pelanggaran berat. Sanksi pelanggaran ini adalah pembatalan tugas
+      akhir dan skorsing, sampai dengan sanksi pemberhentian dan atau pemecatan
+      sebagai mahasiswa Universitas Sriwijaya ataupun pembatalan gelar akademik
+      yang telah diperoleh dari hasil kecurangan akademik tersebut.\n
+      c. Tata cara penjatuhan sanksi untuk pelanggaran berat integritas akademik diatur
+      oleh Komisi Etik yang khusus ditetapkan Rektor untuk kasus pelanggaran berat
+      tersebut.\n
+      d. Komisi Etik mempelajari dan atau menelaah kasus kasus pelanggaran berat
+      yang dimaksud dan mengusulkan sanksi bagi mahasiswa/alumnus yang
+      bersangkutan kepada Rektor.\n
+      e. Rektor memutuskan dan menetapkan sanksi bagi mahasiswa/alumnus yang
+      bersangkutan berdasarkan pertimbangan Komisi Etik yang ditunjuk, dan
+      menetapkan keputusan sanksi dalam Surat Keputusan Rektor.\n
+      3. Pelanggaran terhadap larangan melakukan aktivitas/kegiatan yang terlarang
+      berdasarkan norma agama, susila, sosial, dan hukum negara Republik Indonesia,
+      maka kepada mahasiswa tersebut dapat diberikan sanksi skorsing atau
+      pemecatan/diberhentikan sebagai mahasiswa oleh Universitas Sriwijaya.\n
+      4. Pelanggaran terhadap larangan melakukan tindakan propaganda, menyebar fitnah,
+      dan menyalahgunakan lambang/atribut Universitas Sriwijaya, maka kepada
+      mahasiswa tersebut dapat diberikan sanksi berupa skorsing tidak mengikuti
+      kegiatan akademik selama minimal satu semester atau pemecatan/diberhentikan
+      sebagai mahasiswa oleh Universitas Sriwijaya.\n
+      5. Pelanggaran terhadap larangan melakukan tindakan kekerasan termasuk
+      perundungan (bullying), perkelahian dan/atau tawuran antarmahasiswa dalam
+      Kampus Universitas Sriwijaya atau perkelahian/tawuran di luar kampus yang
+      mencemarkan nama baik Universitas Sriwijaya maka kepada mahasiswa tersebut
+      dapat diberikan sanksi berupa skorsing tidak mengikuti kegiatan akademik selama
+      minimal satu semester atau pemecatan/diberhentikan sebagai mahasiswa oleh
+      Universitas Sriwijaya.\n
+      6. Pelanggaran terhadap larangan melakukan tindakan melanggar hukum dan telah
+      dinyatakan dengan surat keputusan/pernyataan/keterangan dari institusi penegakan
+      hukum, maka kepada mahasiswa tersebut diberikan sanksi berupa pemberhentian
+      sebagai mahasiswa Universitas Sriwijaya.\n
+      7. Pelanggaran terhadap larangan melakukan tindakan kriminal, mencuri, berkelahi,
+      provokasi, menghasut, anarkisme, perpeloncoan, membuat kekacauan dan
+      kerusuhan yang menimbulkan kerusakan barang milik negara maka kepada
+      mahasiswa tersebut dapat diberikan sanksi berupa peringatan tertulis hingga
+      pemberhentian sebagai mahasiswa Universitas Sriwijaya.\n
+      8. Apabila Mahasiswa terbukti melakukan kecurangan akademik bertindak sebagai
+      joki atau meminta seseorang melakukan perjokian untuk mengikuti
+      ujian/penilaian/pelatihan/perkuliahan/kegiatan akademik yang diselenggarakan oleh
+      Universitas Sriwijaya, maka kepada mahasiswa tersebut dapat diberikan sanksi
+      pemecatan/diberhentikan sebagai mahasiswa oleh Universitas Sriwijaya.\n
+      9. Apabila seorang calon mahasiswa dalam pemeriksaan klinis laboratorium ternyata
+      hasilnya terdapat indikasi pemakai/pengguna narkoba, sesuai dengan surat Ditjen
+      Dikti Depdiknas No. 131/D/2000 tanggal 21 Januari 2000 maka kepada calon
+      mahasiswa tersebut dapat diberikan sanksi berupa dibatalkan/gugur/diberhentikan
+      sebagai mahasiswa.\n
+      10. Seluruh civitas akademika (dosen dan mahasiswa) dan tenaga kependidikan wajib
+      terbebaskan dari pengedar/pemakai/pengguna narkoba/NAFZA. Universitas
+      Sriwijaya berhak mengadakan pemeriksaan penggunaan narkoba secara
+      mendadak tanpa pemberitahuan sebelumnya. Apabila terbukti
+      dosen/mahasiswa/tenaga kependidikan bertindak sebagai pengedar atau dari hasil
+      pemeriksaan klinis laboratorium ternyata positif terdapat indikasi pemakai/pengguna
+      narkoba/NAFZA, maka kepada pelaku yang bersangkutan dapat diberikan sanksi
+      berupa pemberhentian sebagai Dosen/Mahasiswa/Karayawan dan akan diproses
+      hukum sesuai ketentuan yang berlaku.\n
+      11. Pelanggaran terhadap ketentuan di atas, kecuali pelanggaran pada angka 2
+      (pelanggaran terhadap ketentuan etika dan kejujuran akademik), ditangani oleh
+      Komisi Disiplin yang dibentuk pada tingkat program studi, jurusan, fakultas, program
+      pascasarjana, atau universitas.\n
+      12. Komisi Disiplin merupakan tim yang ditunjuk dan diangkat oleh pimpinan masing-masing unit kerja atau Rektor dengan tugas dan wewenang memeriksa dan
+      memberi saran atau rekomendasi penyelesaian atas pelanggaran terhadap
+      peraturan Universitas Sriwijaya."
+
+  utter_jawab_predikat_kelulusan:
+   - text:
+      "Mengacu pada Peraturan Menteri Pendidikan dan Kebudayaan Nomor 3 Tahun 2020
+      dalam Pasal 27 ayat (2), predikat kelulusan terdiri atas 3 (tiga) tingkat yaitu Memuaskan,
+      Sangat Memuaskan dan Pujian (Cumlaude) yang ditetapkan berdasarkan pada Indeks
+      Prestasi Kumulatif (IPK) yang dicapai mahasiswa dan masa studi, dengan kriteria sebagai
+      berikut:\n
+      1. Diploma Tiga :\n
+      a. 2.76 - 3.00 = Memuaskan\n
+      b. 3.01 - 3.50 = Sangat Memuaskan\n
+      c. >3.50 = Pujian\n
+      Syarat untuk memperoleh predikat Pujian :\n
+      a. Masa Studi Maksimum 6(Enam) Semester\n
+      b. Maksimum 1 mata kuliah dengan nilai C\n
+      2. Sarjana :\n
+      a. 2.76 - 3.00 = Memuaskan\n
+      b. 3.01 - 3.50 = Sangat Memuaskan\n
+      c. >3.50 = Pujian (Cumlaude)\n
+      Syarat untuk memperoleh predikat Pujian :\n
+      a. Masa Studi Maksimum 8(Delapan) Semester\n
+      b. Maksimum 1 mata kuliah dengan nilai C\n
+      c. Nilai skripsi A\n
+      3. Profesi :\n
+      a. 3.00 - 3.50 = Memuaskan\n
+      b. 3.51 - 3.75 = Sangat Memuaskan\n
+      c. >3.75 = Pujian (Cumlaude)\n
+      Syarat untuk memperoleh predikat Pujian :\n
+      a. Masa Studi Maksimum 2 (dua) atau 4 (empat) semester sesuai program profesi yang diikuti\n
+      b. Tidak mempunyai mata kuliah dengan nilai C."
+  
   utter_terimakasih:
   - text: "Baik Terima kasih! Bye..."
 

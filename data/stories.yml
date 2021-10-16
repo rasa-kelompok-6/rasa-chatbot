@@ -224,3 +224,146 @@ stories:
   - intent: tanya_ketentuan_pencegahan_plagiasi
   - action: utter_jawab_ketentuan_pencegahan_plagiasi
   - action: utter_bantu_lagi
+
+- story: User bertanya mengenai stop out
+  steps:
+    - intent: tanya_stop_out
+    - action: utter_jawab_stop_out
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai ketentuan bagi mahasiswa pindahan
+  steps:
+    - intent: tanya_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_jawab_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai hak mahasiswa
+  steps:
+    - intent: tanya_hak_mahasiswa
+    - action: utter_jawab_hak_mahasiswa
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai peringatan dan sanksi
+  steps:
+    - intent: tanya_peringatan_dan_sanksi
+    - action: utter_jawab_peringatan_dan_sanksi
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai predikat kelulusan
+  steps:
+    - intent: tanya_predikat_kelulusan
+    - action: utter_jawab_predikat_kelulusan
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai stop out dilanjutkan ketentuan mahasiswa pindahan
+  steps:
+    - intent: tanya_stop_out
+    - action: utter_jawab_stop_out
+    - intent: selesai
+    - action: utter_bantu_lagi
+    - intent: tanya_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_jawab_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai stop out dilanjutkan hak mahasiswa
+  steps:
+    - intent: tanya_stop_out
+    - action: utter_jawab_stop_out
+    - intent: selesai
+    - action: utter_bantu_lagi
+    - intent: tanya_hak_mahasiswa
+    - action: utter_jawab_hak_mahasiswa
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai stop out dilanjutkan peringatan dan sanksi
+  steps:
+    - intent: tanya_stop_out
+    - action: utter_jawab_stop_out
+    - intent: selesai
+    - action: utter_bantu_lagi
+    - intent: tanya_peringatan_dan_sanksi
+    - action: utter_jawab_peringatan_dan_sanksi
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai stop out dilanjutkan predikat kelulusan
+  steps:
+    - intent: tanya_stop_out
+    - action: utter_jawab_stop_out
+    - intent: selesai
+    - action: utter_bantu_lagi
+    - intent: tanya_predikat_kelulusan
+    - action: utter_jawab_predikat_kelulusan
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai ketentuan mahasiswa pindahan dilanjutkan hak mahasiswa
+  steps:
+    - intent: tanya_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_jawab_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_bantu_lagi
+    - intent: tanya_hak_mahasiswa
+    - action: utter_jawab_hak_mahasiswa
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai ketentuan mahasiswa pindahan dilanjutkan peringatan dan sanksi
+  steps:
+    - intent: tanya_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_jawab_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_bantu_lagi
+    - intent: tanya_peringatan_dan_sanksi
+    - action: utter_jawab_peringatan_dan_sanksi
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai ketentuan mahasiswa pindahan dilanjutkan predikat kelulusan
+  steps:
+    - intent: tanya_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_jawab_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_bantu_lagi
+    - intent: tanya_predikat_kelulusan
+    - action: utter_jawab_predikat_kelulusan
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai hak mahasiswa dilanjutkan peringatan dan sanksi
+  steps:
+    - intent: tanya_hak_mahasiswa
+    - action: utter_jawab_hak_mahasiswa
+    - action: utter_bantu_lagi
+    - intent: tanya_peringatan_dan_sanksi
+    - action: utter_jawab_peringatan_dan_sanksi
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai hak mahasiswa dilanjutkan predikat kelulusan
+  steps:
+    - intent: tanya_hak_mahasiswa
+    - action: utter_jawab_hak_mahasiswa
+    - action: utter_bantu_lagi
+    - intent: tanya_predikat_kelulusan
+    - action: utter_jawab_predikat_kelulusan
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai peringatan dan sanksi dilanjutkan predikat kelulusan
+  steps:
+    - intent: tanya_peringatan_dan_sanksi
+    - action: utter_jawab_peringatan_dan_sanksi
+    - action: utter_bantu_lagi
+    - intent: tanya_predikat_kelulusan
+    - action: utter_jawab_predikat_kelulusan
+    - action: utter_bantu_lagi
+
+- story: User bertanya mengenai stop out dilanjutkan ketentuan mahasiwa pindahan, dilanjutkan hak mahasiswa, dilanjutkan peringatan dan sanksi, dilanjutkan predikat kelulusan
+  steps:
+    - intent: tanya_stop_out
+    - action: utter_jawab_stop_out
+    - intent: selesai
+    - action: utter_bantu_lagi
+    - intent: tanya_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_jawab_ketentuan_bagi_mahasiswa_pindahan
+    - action: utter_bantu_lagi
+    - intent: tanya_hak_mahasiswa
+    - action: utter_jawab_hak_mahasiswa
+    - action: utter_bantu_lagi
+    - intent: tanya_peringatan_dan_sanksi
+    - action: utter_jawab_peringatan_dan_sanksi
+    - action: utter_bantu_lagi
+    - intent: tanya_predikat_kelulusan
+    - action: utter_jawab_predikat_kelulusan
+    - action: utter_bantu_lagi
