@@ -29,5 +29,5 @@ Otherwise, just run `rasa shell`
 
 # TODO
 
-* Add test stories
+* Add test stories, entitas, slot, custom actions, basis data, dan lainnya untuk menaikan nilai
 * Complete the data
