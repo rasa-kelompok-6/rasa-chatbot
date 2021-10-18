@@ -32,16 +32,22 @@ responses:
             Ada yang bisa saya bantu? Ketik help untuk melihat list pertanyaan yang bisa anda ajukan
 
   utter_tanya_list_command:
-  - text: "Pertanyaan tentang ketentuan UNSRI™ yang dapat anda ajukan adalah :\n
-            - Tentang keluar atau putus studi dari Universitas Srijiwaya\n
-            - Tentang pindah untuk mahasiswa Universitas Sriwijaya\n
-            - Larangan-larangan pada Universitas Srijiwaya\n
-            - Tentang plagiasi pada Universitas Sriwijaya\n
-            - Tentang Stop-out di Universitas Sriwijaya\n
-            - Tentang ketentuan mahasiswa pindahan\n
-            - Tentang hak mahasiswa Universitas Sriwijaya\n
-            - Tentang Peringatan dan Sanski di Universitas Sriwijaya\n
-            - Tentang Predikat Kelulusan"
+  - text: |
+            Pertanyaan tentang ketentuan UNSRI™ yang dapat anda ajukan adalah :
+            - Tentang keluar atau putus studi dari Universitas Srijiwaya
+            - Tentang pindah untuk mahasiswa Universitas Sriwijaya
+            - Larangan-larangan pada Universitas Srijiwaya
+            - Tentang plagiasi pada Universitas Sriwijaya
+            - Tentang Stop-out di Universitas Sriwijaya
+            - Tentang ketentuan mahasiswa pindahan
+            - Tentang hak mahasiswa Universitas Sriwijaya
+            - Tentang Peringatan dan Sanski di Universitas Sriwijaya
+            - Tentang Predikat Kelulusan
+            - Tentang Kriteria putus studi doktor
+            - Tentang Pindah di dalam Universitas Sriwijaya
+            - Tentang Pindah dari perguruan tinggi lain ke Universitas Sriwijaya
+            - Tentang kewajiban mahasiswa Universitas Sriwijaya
+            - Tentang persyaratan Yudisium
 
   utter_bantu_lagi:
   - text: "Ada yang bisa saya bantu lagi?"
