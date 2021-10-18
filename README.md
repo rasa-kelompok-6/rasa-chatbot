@@ -29,10 +29,6 @@ run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`. I
 
 `rasa run -m models --enable-api --cors "*"` if you want to run on website. Then open index.html on browser
 
-# Dependencies
-
-* Tensorflow
-
 # TODO
 
 * Add test stories, entitas, slot, custom actions, basis data, dan lainnya untuk menaikan nilai
