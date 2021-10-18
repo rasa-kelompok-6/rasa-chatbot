@@ -32,3 +32,4 @@ run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`. I
 # TODO
 
 * Add test stories, entitas, slot, custom actions, basis data, dan lainnya untuk menaikan nilai
+* Host di heroku/ngrok
