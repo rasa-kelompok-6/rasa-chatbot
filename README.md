@@ -20,10 +20,14 @@ Check available environments with `conda info --envs`, or create one with `conda
 Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
 
 ## If you create a new environment
-run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`. And then initialize with `rasa init`
+run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`. If you want a new project, then initialize with `rasa init`
 
 ## If you dont
-Just run `rasa shell` to run on shell, or `rasa train` if you want to train model with new data.
+`rasa shell` to run on shell
+
+`rasa train` if you want to train model with new data
+
+`rasa run -m models --enable-api --cors "*"` if you want to run on website. Then open index.html
 
 # Dependencies
 
@@ -32,4 +36,3 @@ Just run `rasa shell` to run on shell, or `rasa train` if you want to train mode
 # TODO
 
 * Add test stories, entitas, slot, custom actions, basis data, dan lainnya untuk menaikan nilai
-* Complete the data
