@@ -27,7 +27,7 @@ run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`. I
 
 `rasa train` if you want to train model with new data
 
-`rasa run -m models --enable-api --cors "*"` if you want to run on website. Then open index.html
+`rasa run -m models --enable-api --cors "*"` if you want to run on website. Then open index.html on browser
 
 # Dependencies
 
