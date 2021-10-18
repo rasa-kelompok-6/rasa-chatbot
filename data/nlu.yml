@@ -142,6 +142,84 @@ nlu:
     - peraturan tentang tindakan plagiasi di universitas sriwijaya
     - peraturan tentang tindakan plagiasi di unsri
     - bagaimana tentang plagiasi?
+    
+- intent: tanya_kriteria_putus_studi_doktor
+  examples: |
+    - Putus studi mahasiswa program doktor
+    - Putus studi mahasiswa S3
+    - Kriteria putus studi mahasiswa program doktor
+    - Kriteria putus studi mahasiswa S3
+    - saya ingin bertanya mahasiswa program doktor dinyatakan putus studi jika bagaimana ya?
+    - saya ingin bertanya mahasiswa S3 dinyatakan putus studi jika bagaimana ya?
+    - Mahasiswa program doktor dinyatakan putus studi jika memenuhi kriteria yang bagaimana?
+
+- intent: tanya_pindah_di_dalam_unsri
+  examples: |
+    - apakah di unsri bisa pindah ke jurusan lain?
+    - apakah di unsri bisa pindah ke program studi lain?
+    - apakah di unsri bisa pindah ke fakultas lain?
+    - bagaimana cara pindah jurusan di unsri?
+    - bagaimana cara pindah program studi di unsri?
+    - pindah jurusan
+    - pindah program studi
+    - pindah fakultas
+    - apakah saya bisa pindah jurusan?
+    - apakah saya bisa pindah program studi?
+    - apakah mahasiswa di unsri bisa pindah jurusan?
+    - Apa saja syarat pindah jurusan?
+    - Syarat pindah program studi
+    - Syarat pindah fakultas
+    - Syarat pindah jurusan
+    - Bisa gak kalo saya mau pindah jurusan?
+    - Apakah di unsri memungkinkan untuk pindah jurusan dalam satu kampus?
+    - Saya ingin pindah jurusan
+    - tata cara pindah jurusan
+    - tata cara pindah program studi
+    - tata cara pindah fakultas
+
+- intent: tanya_pindah_pt_lain_ke_unsri
+  examples: |
+    - apakah unsri menerima pindahan dari perguruan tinggi lain?
+    - apakah unsri menerima pindahan dari kampus lain?
+    - pindah kampus ke unsri
+    - perpindahan mahasiswa dari perguruan tinggi lain ke unsri
+    - cara pindah dari kampus lain ke unsri
+    - bagaimana cara pindah ke unsri?
+    - bagaimana mahasiswa perguruan tinggi lain bisa pindah ke unsri?
+    - tata cara perpindahan mahasiswa perguruan tinggi lain ke unsri
+    - syarat pindah ke unsri
+    - kriteria pindah ke unsri
+
+- intent: tanya_kewajiban
+  examples: |
+    - apa saja kewajiban mahasiswa universitas sriwijaya?
+    - kewajiban mahasiswa unsri
+    - kewajiban mahasiswa universitas sriwijaya
+    - kewajiban apa saja yang harus dilakukan mahasiswa universitas sriwijaya?
+    - kewajiban apa saja yang harus dilakukan mahasiswa unsri?
+    - kewajiban di universitas sriwijaya
+    - kewajiban di unsri
+    - apa saja kewajiban mahasiswa?
+    - kewajiban mahasiswa
+
+- intent: tanya_persyaratan_yudisium
+  examples: |
+    - yudisium
+    - yudisium itu apa?
+    - yudisium adalah
+    - apa itu yudisium?
+    - apa saja persyaratan yudisium?
+    - apa syarat yudisium?
+    - syarat lulus
+    - syarat yudisium
+    - mahasiswa dinyatakan lulus jika?
+    - syarat mahasiswa dinyatakan lulus
+    - ketentuan mahasiswa dinyatakan lulus
+    - kelulusan mahasiswa
+    - kelulusan mahasiswa universitas sriwijaya
+    - tentang yudisium univeristas sriwijaya
+    - tentang kelulusan mahasiswa
+    - tentang kelulusan mahasiswa universitas sriwijaya
 
 - intent: bot_challenge
   examples: |

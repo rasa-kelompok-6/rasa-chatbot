@@ -16,6 +16,11 @@ intents:
   - tanya_hak_mahasiswa
   - tanya_peringatan_dan_sanksi
   - tanya_predikat_kelulusan
+  - tanya_kriteria_putus_studi_doktor
+  - tanya_pindah_di_dalam_unsri
+  - tanya_pindah_pt_lain_ke_unsri
+  - tanya_kewajiban
+  - tanya_persyaratan_yudisium
   - bot_challenge
   - selesai
 
@@ -326,6 +331,123 @@ responses:
       Syarat untuk memperoleh predikat Pujian :\n
       a. Masa Studi Maksimum 2 (dua) atau 4 (empat) semester sesuai program profesi yang diikuti\n
       b. Tidak mempunyai mata kuliah dengan nilai C."
+      
+  utter_jawab_kriteria_putus_studi_doktor:
+  - text: "Mahasiswa Program Doktor dinyatakan putus studi (drop out) apabila memenuhi satu atau lebih kriteria berikut:\n
+          1. Apabila tidak memenuhi kewajiban akademik yang dipersyaratkan untuk program Doktor yang ditetapkan dengan
+             Surat Keputusan Rektor. Secara rinci persyaratan, prosedur dan ketentuan akademik lainnya tentang program
+             Doktor di lingkungan Universitas Sriwijaya dimuat dalam Buku Pedoman Akademik tersendiri; atau \n
+          2. Tidak membayar UKT semester sampai batas waktu yang telah ditentukan dan tidak mengajukan SO. \n "
+
+  utter_jawab_pindah_di_dalam_unsri:
+  - text: "Mahasiswa dapat pindah dari satu program studi ke program studi lain dalam lingkungan Universitas Sriwijaya,
+           apabila memenuhi persyaratan sebagai berikut: \n
+           a. Pindah program hanya dapat dilakukan mahasiswa pada program studi yang sejenis atau serumpun pada jenjang
+              yang sama dalam lingkungan Universitas Sriwijaya.\n
+           b. Perpindahan program studi bukan disebabkan pelanggaran akademik.\n
+           c. Mahasiswa telah mengikuti kegiatan akademik sekurang-kurangnya dua semester dan minimum telah mengumpulkan
+              26 sks.\n
+           d. Mahasiswa meraih IPK ≥ 2,25, bagi Program Diploma Tiga atau Program Sarjana, dan ≥ 3,00 bagi Program
+              Magister dan Program Doktor.\n
+           e. Mahasiswa bersedia memenuhi semua ketentuan administrasi akademik dan keuangan yang berlaku pada program
+              studi tujuan.\n
+           f. Perpindahan program studi disetujui Dekan Fakultas/Direktur Program Pascasarjana pada program studi yang
+              menjadi tujuan berdasarkan pertimbangan prestasi akademik mahasiswa, daya tampung/kapasitas prodi tujuan,
+              alasan kepindahan, dan pertimbangan akademik khusus jika diperlukan.\n
+
+          Tata cara pindah program studi di dalam Universitas Sriwijaya:\n
+          a. Mahasiswa menyampaikan maksud pindah program studi kepada dosen PA.\n
+          b. Setelah mendapat pertimbangan dosen PA, mahasiswa mengajukan permohonan pindah program studi kepada Dekan
+             Fakultas/Direktur Program Pascasarjana pada prodi asal.\n
+          c. Dekan Fakultas/Direktur Program Pascasarjana, setelah mempertimbangkan prestasi akademik mahasiswa, daya
+             tampung/kapasitas prodi tujuan, alasan kepindahan, dan pertimbangan akademik lainnya, dapat menerima atau
+             menolak permohonan pindah program studi.\n
+          d. Apabila Dekan Fakultas/Direktur Program Pascasarjana prodi asal menyetujui permohonan pindah program studi
+             yang diajukan mahasiswa, Dekan Fakultas/Direktur Program Pascasarjana prodi asal meneruskan permohonan
+             mahasiswa tersebut kepada Rektor.\n
+          e. Apabila prodi tujuan berada pada fakultas yang sama, Rektor menetapkan persetujuan atau penolakan permohonan
+             pindah program studi yang diusulkan.\n
+          f. Apabila prodi tujuan berbeda fakultas, Rektor meneruskan permohonan pindah program studi kepada Dekan pada
+             prodi tujuan, untuk meminta pertimbangan.\n
+          g. Memperhatikan pertimbangan Dekan pada prodi tujuan, Rektor menetapkan persetujuan atau penolakan permohonan
+             pindah program studi yang diusulkan.\n "
+
+  utter_jawab_pindah_pt_lain_ke_unsri:
+  - text: "Universitas Sriwijaya dapat menerima mahasiswa pindahan dari perguruan tinggi lain pada program studi yang sama
+           dengan program studi yang diselenggarakan Universitas Sriwijaya dengan ketentuan:\n
+          a. Program studi asal memiliki akreditasi minimal sama dengan program studi tujuan di Universitas Sriwijaya.\n
+          b. Kepindahan diajukan karena alasan mutasi dinas orang tua/wali serta dengan bukti yang kuat tentang perlunya
+             kebersamaan (ketergantungan) mahasiswa yang bersangkutan dengan orang tua/wali-nya.\n
+          c. Alasan pindah ke Universitas Sriwijaya bukan karena dikeluarkan dari perguruan tinggi asal yang dibuktikan
+             dengan surat keterangan dari Rektor bersangkutan.\n
+          d. Tersedia sisa masa studi yang memenuhi persyaratan untuk menyelesaikan pendidikannya di Universitas Sriwijaya.\n
+          e. Tersedia daya tampung pada prodi yang dituju.\n
+          f. Memenuhi persyaratan akademik dan keuangan yang ditetapkan oleh Fakultas/Program tujuan.\n
+          g. Bagi mahasiswa pindahan dari Program Sarjana maka berlaku persyaratan sebagai berikut:\n
+                1) Telah mengikuti kegiatan akademik selama minimal dua semester di perguruan tinggi asal, harus mengumpulkan
+                   sekurang-kurangnya 27 sks dengan IPK ≥ 2,76 atau yang ditetapkan oleh program studi.\n
+                2) Telah mengikuti kegiatan akademik selama 4 semester di perguruan tinggi asal, dan harus mengumpulkan
+                   sekurang-kurangnya 52 sks dengan IPK ≥ 2,76 atau yang ditetapkan oleh program studi.\n
+          h. Bagi mahasiswa pindahan dari program magister atau program doktor, maka berlaku persyaratan sebagai berikut:\n
+                1) Persetujuan perpindahan diberikan oleh Rektor dengan mempertimbangkan status dan kualitas perguruan
+                   tinggi asal, akreditasi, jalur seleksi, serta alasan kepindahan.\n
+                2) Permohonan perpindahan diajukan langsung ke Rektor dengan melampirkan persyaratan yang ditetapkan.\n
+                3) IPK minimal 3,25 untuk Program Magister.\n
+                4) IPK minimal 3,50 untuk Program Doktor.\n
+                5) Telah mengikuti kegiatan akademik di perguruan tinggi asal selama maksimum 2 semester untuk Program Magister
+                   dengan jumlah kredit sekurang-kurangnya 20 sks dan maksimum 4 semester untuk Program Doktor dengan jumlah
+                   kredit sekurangkurangnya 37 sks.\n"
+
+  utter_jawab_kewajiban:
+  - text: "Mahasiswa berkewajiban: \n
+            1. Mematuhi semua ketentuan peraturan, etika akademik, dan etika perilaku yang berlaku di Universitas
+               Sriwijaya.\n
+            2. Senantiasa berperilaku baik, sopan dan santun, saling menghargai dan menghormati, menjaga nama baik
+               Universitas Sriwijaya, serta tidak melakukan perbuatan tercela termasuk perbuatan/perkataan yang menunjukkan
+               sikap intoleransi, pelecehan seksual dan atau perundungan (bullying) di lingkungan kampus maupun di luar
+               kampus.\n
+            3. Menggunakan pakaian dan penampilan yang sopan serta tidak menggunakan perhiasan yang berlebihan baik
+               didalam kampus atau diluar kampus.\n
+            4. Ikut menanggung biaya penyelenggaraan pendidikan kecuali bagi mahasiswa yang diberikan beasiswa baik yang
+               bersumber dari APBN dan Non APBN.\n
+            5. Menjaga integritas dan kejujuran akademik dengan tidak melakukan tindakan plagiat, fabrikasi atau falsifikasi
+               data dan informasi dalam kegiatan akademik termasuk dalam pelaksanaan pembelajaran, penelitian, dan atau
+               pengabdian kepada masyarakat, serta pada berbagai karya tulis ilmiah termasuk publikasi ilmiah/skripsi/
+               tesis/disertasi, serta karya akademik lainnya.\n
+            6. Menghargai ilmu pengetahuan, teknologi, dan kesenian dan Menjaga kebersihan, ketentraman, ketenangan, kenyamanan,
+               serta keindahan kampus Universitas Sriwijaya.\n
+            7. Ikut bertanggung jawab memelihara sarana dan prasarana serta kebersihan, ketertiban, keamanan, keindahan,
+               dan pepohonan kampus Universitas Sriwijaya serta terciptanya kampus sehat.\n
+            8. Mencegah pengrusakan sarana prasarana Universitas Sriwijaya, penebangan pohonpohon yang tanpa alasan dan
+               perintah oleh pihak yang tidak bertanggung jawab dalam kampus Universitas Sriwijaya.\n
+            9. Menjaga kewibawaan dan nama baik Universitas/Fakultas/ Program.\n
+            10. Menjunjung tinggi nilai kebudayaan nasional dan menghormati budaya negara lain.\n"
+
+  utter_jawab_persyaratan_yudisium:
+  - text: "Mahasiswa dapat dinyatakan lulus apabila telah:\n
+            1. menyelesaikan seluruh ketentuan belajar dan mencapai kompetensi lulusan yang ditetapkan pada kurikulum
+               program studi,\n
+            2. mengumpulkan jumlah kredit minimum yang dipersyaratkan dan menyelesaikan studi dalam batas masa studi yang
+               ditetapkan untuk masing-masing program sesuai Tabel 3.1. Penyelesaian program dalam masa studi yang melebihi
+               ketentuan pada Tabel 3.1. dimungkinkan atas izin tertulis Rektor;\n
+            3. mencapai ketentuan capaian pembelajaran lulusan (kompetensi lulusan) yang ditetapkan pada kurikulum program
+               studi dengan nilai dan IPK minimal sesuai ketentuan sebagai berikut:\n
+                    a. program diploma mencapai IPK ≥ 2,00, program sarjana mencapai IPK ≥ 2,76, program magister dan
+                       program doktor mencapai IPK ≥ 3,25;\n
+                    b. tidak memiliki nilai E untuk program diploma, dan program sarjana, dan tidak memiliki nilai D atau
+                       E untuk program magister dan program doktor; dan \n
+                    c. program diploma dan program sarjana, nilai D tidak melebihi 10% dari jumlah kredit minimal yang
+                       ditetapkan;\n
+            4. memenuhi ketentuan publikasi hasil penelitian bagi program Magister dan program Doktor sesuai ketentuan yang
+               diuraikan pada Bagian 3.6, Tabel 3.2;\n
+            5. memenuhi ketentuan pemeriksaan kesamaan/kemiripan naskah sesuai ketentuan yang diuraikan pada Bagian 3.12;\n
+            6. dinyatakan lulus untuk kompetensi lain, seperti penguasaan bahasa Inggris dengan memenuhi nilai Bahasa
+               Inggris yang telah ditetapkan oleh Fakultas/Program/Jurusan/Prodi;\n
+            7. lulus ujian akhir program dan telah menyelesaikan seluruh ketentuan perbaikan tugas akhir pada proyek akhir,
+               skripsi, tesis atau disertasi, sesuai dengan yang ditetapkan oleh Fakultas/Program/Jurusan/Prodi. Naskah
+               tugas akhir skripsi, tesis, atau disertasi dapat dalam bentuk lain sesuai ketentuan pada Bagian 3.6 Tabel 3.2.;\n
+            8. memenuhi persyaratan administrasi kelulusan Universitas Sriwijaya; dan \n
+            9. memenuhi kewajiban pelunasan biaya pendidikan (UKT).\n"
   
   utter_terimakasih:
   - text: "Baik Terima kasih! Bye..."
