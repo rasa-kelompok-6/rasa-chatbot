@@ -23,7 +23,19 @@ Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
 run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`.
 
 ### If you want to have rasa x
-instead of `pip install rasa`, run `pip install rasa==2.8.2`, `pip install rasa-sdk==2.8.1`, `pip install rasa-x==0.39.3 --extra-index-url https://pypi.rasa.com/simple`, `pip3 install SQLAlchemy==1.3.22`, and `pip install sanic-jwt==1.6.0` (Newer version of rasa x seems to always crash, so just install past versions)
+instead of `pip install rasa`
+
+run 
+
+`pip install rasa==2.8.2`, 
+
+`pip install rasa-sdk==2.8.1`, 
+
+`pip install rasa-x==0.39.3 --extra-index-url https://pypi.rasa.com/simple`, 
+
+`pip3 install SQLAlchemy==1.3.22`, 
+
+and `pip install sanic-jwt==1.6.0` (Newer version of rasa x seems to always crash, so just install past versions)
 
 If you want a new project, then initialize with `rasa init`
 
