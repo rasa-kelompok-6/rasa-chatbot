@@ -50,5 +50,5 @@ If you want a new project, then initialize with `rasa init`
 
 # TODO
 
-* Add test stories, entitas, slot, custom actions, basis data, dan lainnya untuk menaikan nilai
-* Host di heroku/ngrok
+* Add test stories, ~~entitas, slot, custom actions~~, basis data, dan lainnya untuk menaikan nilai
+* ~~Host di heroku/ngrok~~ Done
