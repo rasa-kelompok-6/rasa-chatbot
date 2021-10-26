@@ -40,13 +40,13 @@ and `pip install sanic-jwt==1.6.0` (Newer version of rasa x seems to always cras
 If you want a new project, then initialize with `rasa init`
 
 ## Once rasa is installed
-`rasa run -m models --enable-api --cors "*"` to run on browser. Then open index.html on browser
+`rasa run -m models --enable-api --cors "*" --endpoints endpoints.yml` to run on browser. Then open index.html on browser
 
-`rasa shell` to run on shell
+`rasa shell --endpoints endpoints.yml` to run on shell
 
 `rasa train` if you want to train model with new data
 
-`rasa x` to run rasa x, built in browser GUI by rasa
+`rasa x --endpoints endpoints.yml` to run rasa x, built in browser GUI by rasa
 
 # TODO
 
