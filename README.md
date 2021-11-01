@@ -33,7 +33,9 @@ run
 
 `pip install rasa-x==0.39.3 --extra-index-url https://pypi.rasa.com/simple`, 
 
-`pip3 install SQLAlchemy==1.3.22`, 
+`pip3 install SQLAlchemy==1.3.22`,
+
+`pip install --upgrade pyparsing==2.4.7`,
 
 and `pip install sanic-jwt==1.6.0` (Newer version of rasa x seems to always crash, so just install past versions)
 
