@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: salam
   examples: |
@@ -15,7 +14,6 @@ nlu:
     - selamat siang
     - selamat sore
     - selamat malam
-
 - intent: help
   examples: |
     - help
@@ -27,7 +25,6 @@ nlu:
     - bisa tanya apa saja?
     - boleh bertanya tidak
     - bisa tolong bertanya ?
-
 - intent: tanya_bentuk_putus_studi
   examples: |
     - saya ingin bertanya tentang bentuk putus studi seperti apa?
@@ -40,7 +37,6 @@ nlu:
     - bentuk putus studi di unsri gimana ya?
     - apa aja bentuk putus studi di unsri?
     - saya mau nanya bentuk putus studi di unsri bagaimana ya?
-
 - intent: tanya_bentuk_putus_studi_undur
   examples: |
     - 1
@@ -55,7 +51,6 @@ nlu:
     - yang 1
     - yang bagian 1
     - satu
-
 - intent: tanya_bentuk_putus_studi_do
   examples: |
     - 2
@@ -74,7 +69,6 @@ nlu:
     - yang bagian 2
     - dua
     - mahasiswa do
-
 - intent: tanya_bentuk_putus_studi_diberhentikan
   examples: |
     - 3
@@ -98,7 +92,6 @@ nlu:
     - yang 3
     - yang bagian 3
     - tiga
-
 - intent: tanya_pindah_unsri_Ke_ptn_lain
   examples: |
     - bagaimana cara perpindahan mahasiswa ke perguruan tinggi lain?
@@ -111,7 +104,6 @@ nlu:
     - bagaimana cara perpindahan mahasiswa ke kampus lain?
     - tata cara perpindahan mahasiswa ke ptn lain
     - tata cara perpindahan mahasiswa ke kampus lain
-
 - intent: tanya_larangan
   examples: |
     - larangan apa saja yang tidak boleh dilanggar di universitas sriwijaya?
@@ -128,7 +120,6 @@ nlu:
     - hal-hal yang tidak boleh dilakukan di universitas sriwijaya?
     - hal yang tidak boleh dilakukan di unsri?
     - hal-hal yang tidak boleh dilakukan di unsri?
-
 - intent: tanya_ketentuan_pencegahan_plagiasi
   examples: |
     - terkait plagiasi di universitas sriwijaya bagaimana?
@@ -142,7 +133,7 @@ nlu:
     - peraturan tentang tindakan plagiasi di universitas sriwijaya
     - peraturan tentang tindakan plagiasi di unsri
     - bagaimana tentang plagiasi?
-    
+    - tentang peringatan dan sanksi di unsri
 - intent: tanya_kriteria_putus_studi_doktor
   examples: |
     - Putus studi mahasiswa program doktor
@@ -152,7 +143,6 @@ nlu:
     - saya ingin bertanya mahasiswa program doktor dinyatakan putus studi jika bagaimana ya?
     - saya ingin bertanya mahasiswa S3 dinyatakan putus studi jika bagaimana ya?
     - Mahasiswa program doktor dinyatakan putus studi jika memenuhi kriteria yang bagaimana?
-
 - intent: tanya_pindah_di_dalam_unsri
   examples: |
     - apakah di unsri bisa pindah ke jurusan lain?
@@ -176,7 +166,6 @@ nlu:
     - tata cara pindah jurusan
     - tata cara pindah program studi
     - tata cara pindah fakultas
-
 - intent: tanya_pindah_pt_lain_ke_unsri
   examples: |
     - apakah unsri menerima pindahan dari perguruan tinggi lain?
@@ -189,7 +178,6 @@ nlu:
     - tata cara perpindahan mahasiswa perguruan tinggi lain ke unsri
     - syarat pindah ke unsri
     - kriteria pindah ke unsri
-
 - intent: tanya_kewajiban
   examples: |
     - apa saja kewajiban mahasiswa universitas sriwijaya?
@@ -201,7 +189,6 @@ nlu:
     - kewajiban di unsri
     - apa saja kewajiban mahasiswa?
     - kewajiban mahasiswa
-
 - intent: tanya_persyaratan_yudisium
   examples: |
     - yudisium
@@ -220,7 +207,6 @@ nlu:
     - tentang yudisium univeristas sriwijaya
     - tentang kelulusan mahasiswa
     - tentang kelulusan mahasiswa universitas sriwijaya
-
 - intent: bot_challenge
   examples: |
     - siapa kamu?
@@ -233,7 +219,6 @@ nlu:
     - apakah anda manusia?
     - apakah sat ini saya bicara dengan bot?
     - apakah saat ini saya bicara dengan manusia?
-
 - intent: selesai
   examples: |
     - tidak
@@ -244,7 +229,6 @@ nlu:
     - tidak ada terimakasih
     - cukup terimakasih
     - sudah, terimakasih
-
 - intent: akhiri
   examples: |
     - bye
@@ -259,3 +243,60 @@ nlu:
     - oke itu saja
     - itu saja
     - sekian
+- intent: give_name
+  examples: |
+    - nama saya [AMOS AUGUSTO SILANGIT](name)
+    - my name is [MUHAMMAD RIZQI ASSABIL](name)
+    - name's [MUHAMMAD FURQON NAZULI](name)
+    - name is [ABDIANSYAH](name)
+    - yea, my name is [FRIZA ADITYA](name)
+    - sure. I am [AMALIA ANANDA KHALISA](name)
+    - yep. my name is [ISNANIA TULJANNAH](name)
+    - [LUTHFI ARYA DAKSA](name)
+    - [ABDIANSYAH](name)
+- intent: ask_name
+  examples: |
+    - siapa saya
+    - nama saya siapa
+    - beritahu nama saya
+    - beri tahu nama saya
+    - kasih tau nama saya
+    - nama
+    - nama saya
+    - nama ku siapa
+    - aku siapa
+    - namaku siapa
+    - whats my name?
+    - say my name
+    - do you know my name?
+    - tell me whats my name
+    - who am i
+    - hey whats my name
+    - hey who am i
+    - my name
+    - tell me my name
+- intent: reset
+  examples: |
+    - reset
+    - reset slot
+    - /reset  
+- intent: ask_time
+  examples: |
+    - jam berapa sekarang
+    - sekarang jam berapa
+    - jam
+    - tolong beri tahu saya jam sekarang
+    - tolong beri tahu jam
+    - jam sekarang
+    - waktu
+    - sekarang pukul berapa
+    - sekarang jam
+    - time
+    - time now
+    - what time is it
+    - whats the time
+    - can you tell me the time
+    - tell me the time
+    - tell the time
+    - clock
+    - whats the clock

@@ -25,3 +25,42 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+
+from typing import Any, Text, Dict, List
+
+# from rasa_sdk.events import SlotSet
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+
+# Time
+from datetime import datetime
+
+class ActionGetTime(Action):
+
+    def name(self) -> Text:
+        return "action_get_time"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        print_time = "The time now is " + current_time
+        dispatcher.utter_message(text=print_time)
+
+        return []
+
+class ActionReset(Action):
+
+     def name(self) -> Text:
+            return "action_reset"
+
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+         dispatcher.utter_message("Slots == reset!")
+
+         return [AllSlotsReset()]
