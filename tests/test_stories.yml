@@ -27,7 +27,7 @@ stories:
       bentuk putus studi di unsri
     intent: tanya_bentuk_putus_studi
   - action: utter_jawab_bentuk_putus_studi
-  -user: |
+  - user: |
       nomor 1
     intent: tanya_bentuk_putus_studi_undur
   - action: utter_jawab_bentuk_putus_studi_undur
@@ -47,7 +47,7 @@ stories:
       bentuk putus studi di unsri
     intent: tanya_bentuk_putus_studi
   - action: utter_jawab_bentuk_putus_studi
-  -user: |
+  - user: |
       untuk mahasiswa yang do gimana?
     intent: tanya_bentuk_putus_studi_do
   - action: utter_jawab_bentuk_putus_studi_do
@@ -67,7 +67,7 @@ stories:
       bentuk putus studi di unsri
     intent: tanya_bentuk_putus_studi
   - action: utter_jawab_bentuk_putus_studi
-  -user: |
+  - user: |
       3
     intent: tanya_bentuk_putus_studi_diberhentikan
   - action: utter_jawab_bentuk_putus_studi_diberhentikan
@@ -87,17 +87,17 @@ stories:
       bentuk putus studi di unsri
     intent: tanya_bentuk_putus_studi
   - action: utter_jawab_bentuk_putus_studi
-  -user: |
+  - user: |
       1
     intent: tanya_bentuk_putus_studi_undur
   - action: utter_jawab_bentuk_putus_studi_undur
   - action: utter_bantu_lagi
-  -user: |
+  - user: |
       2
     intent: tanya_bentuk_putus_studi_do
   - action: utter_jawab_bentuk_putus_studi_do
   - action: utter_bantu_lagi
-  -user: |
+  - user: |
       3
     intent: tanya_bentuk_putus_studi_diberhentikan
   - action: utter_jawab_bentuk_putus_studi_diberhentikan
@@ -1127,7 +1127,7 @@ stories:
   - action: utter_jawab_kewajiban
   - action: utter_bantu_lagi
   - user: |
-    syarat yudisium
+      syarat yudisium
     intent: tanya_persyaratan_yudisium
   - action: utter_jawab_persyaratan_yudisium
   - action: utter_bantu_lagi
