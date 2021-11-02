@@ -42,6 +42,10 @@ and `pip install sanic-jwt==1.6.0` (Newer version of rasa x seems to always cras
 If you want a new project, then initialize with `rasa init`
 
 ## Once rasa is installed
+In one terminal, run `rasa run actions`
+
+And then open another terminal and do the following:
+
 `rasa run -m models --enable-api --cors "*" --endpoints endpoints.yml` to run on browser. Then open index.html on browser
 
 `rasa shell --endpoints endpoints.yml` to run on shell
@@ -52,5 +56,5 @@ If you want a new project, then initialize with `rasa init`
 
 # TODO
 
-* Add test stories, ~~entitas, slot, custom actions~~, basis data, dan lainnya untuk menaikan nilai
+* ~~Add test stories, ~~entitas, slot, custom actions~~, basis data, dan lainnya untuk menaikan nilai~~ Done, maybe
 * ~~Host di heroku/ngrok~~ Done
