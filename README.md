@@ -10,6 +10,10 @@ unsri chatbot 5000
 
 [Any other OS](https://docs.anaconda.com/anaconda/install/)
 
+## Install Microsoft C++ Build Tools
+
+[Link](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
 # Run
 Open anaconda prompt
 
