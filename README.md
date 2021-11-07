@@ -31,7 +31,7 @@ instead of `pip install rasa`
 
 run 
 
-`pip install --upgrade pip==20.2 --user`
+`pip install --upgrade pip==20.2 --user`,
 
 `pip install rasa==2.8.2`, 
 
@@ -62,5 +62,5 @@ And then open another terminal and do the following:
 
 # TODO
 
-* ~~Add test stories, ~~entitas, slot, custom actions~~, basis data, dan lainnya untuk menaikan nilai~~ Done, maybe
+* ~~Add test stories, entitas,slot, custom actions, basis data, dan lainnya untuk menaikan nilai~~ Done, maybe
 * ~~Host di heroku/ngrok~~ Done
