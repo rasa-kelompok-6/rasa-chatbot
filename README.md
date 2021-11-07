@@ -31,6 +31,8 @@ instead of `pip install rasa`
 
 run 
 
+`pip install --upgrade pip==20.2 --user`
+
 `pip install rasa==2.8.2`, 
 
 `pip install rasa-sdk==2.8.1`, 
