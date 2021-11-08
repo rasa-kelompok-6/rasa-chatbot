@@ -43,3 +43,8 @@ rules:
   steps:
   - intent: ask_name
   - action: utter_say_name
+
+- rule: Get Data Siswa
+  steps:
+  - intent: ask_data
+  - action: action_get_data

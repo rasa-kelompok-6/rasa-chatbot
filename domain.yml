@@ -5,67 +5,87 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- reset:
+- reset
+- ask_time
+- help
+- akhiri
+- tanya_bentuk_putus_studi
+- tanya_bentuk_putus_studi_undur
+- tanya_bentuk_putus_studi_do
+- tanya_bentuk_putus_studi_diberhentikan
+- tanya_pindah_unsri_Ke_ptn_lain
+- tanya_larangan
+- tanya_ketentuan_pencegahan_plagiasi
+- tanya_stop_out
+- tanya_ketentuan_bagi_mahasiswa_pindahan
+- tanya_hak_mahasiswa
+- tanya_peringatan_dan_sanksi
+- tanya_predikat_kelulusan
+- tanya_kriteria_putus_studi_doktor
+- tanya_pindah_di_dalam_unsri
+- tanya_pindah_pt_lain_ke_unsri
+- tanya_kewajiban
+- tanya_persyaratan_yudisium
+- bot_challenge
+- selesai
+- salam
+- give_data:
     use_entities: true
-- ask_time:
-    use_entities: true
-- ask_name:
+- ask_data:
     use_entities: true
 - give_name:
     use_entities: true
-- salam:
+- give_semester:
     use_entities: true
-- help:
+- give_nim:
     use_entities: true
-- akhiri:
+- give_ipk:
     use_entities: true
-- tanya_bentuk_putus_studi:
+- ask_name:
     use_entities: true
-- tanya_bentuk_putus_studi_undur:
-    use_entities: true
-- tanya_bentuk_putus_studi_do:
-    use_entities: true
-- tanya_bentuk_putus_studi_diberhentikan:
-    use_entities: true
-- tanya_pindah_unsri_Ke_ptn_lain:
-    use_entities: true
-- tanya_larangan:
-    use_entities: true
-- tanya_ketentuan_pencegahan_plagiasi:
-    use_entities: true
-- tanya_stop_out:
-    use_entities: true
-- tanya_ketentuan_bagi_mahasiswa_pindahan:
-    use_entities: true
-- tanya_hak_mahasiswa:
-    use_entities: true
-- tanya_peringatan_dan_sanksi:
-    use_entities: true
-- tanya_predikat_kelulusan:
-    use_entities: true
-- tanya_kriteria_putus_studi_doktor:
-    use_entities: true
-- tanya_pindah_di_dalam_unsri:
-    use_entities: true
-- tanya_pindah_pt_lain_ke_unsri:
-    use_entities: true
-- tanya_kewajiban:
-    use_entities: true
-- tanya_persyaratan_yudisium:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
-- selesai:
-    use_entities: true
+
 entities:
 - name
+- semester
+- nim
+- ipk
 slots:
   name:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
     influence_conversation: true
+  semester:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  nim:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  ipk:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
+  utter_ask_name:
+  - text: Siapa nama anda?
+  utter_ask_nim:
+  - text: Berapa NIM anda?
+  utter_ask_semester:
+  - text: Semester berapa anda?
+  utter_ask_ipk:
+  - text: Berapa IPK anda?
+  utter_data_thanks:
+  - text: Data yang ditambahkan adalah {name}, dengan nim {nim}, semester {semester}, dan ipk {ipk}. Terima kasih!
   utter_say_name:
   - condition:
     - name: name
@@ -97,6 +117,8 @@ responses:
       - Tentang Pindah dari perguruan tinggi lain ke Universitas Sriwijaya
       - Tentang kewajiban mahasiswa Universitas Sriwijaya
       - Tentang persyaratan Yudisium
+
+      Atau anda juga bisa melakukan beberapa hal lain, seperti menginput data, menanyakan nama, dan menanyakan waktu
   utter_bantu_lagi:
   - condition:
     - name: name
@@ -322,5 +344,8 @@ responses:
 actions:
 - action_get_time
 - action_reset
+- action_set_slot
+- action_set_data
+- action_get_data
 forms: {}
 e2e_actions: []

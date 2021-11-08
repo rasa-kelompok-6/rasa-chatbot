@@ -502,11 +502,32 @@ stories:
   - action: utter_jawab_persyaratan_yudisium
   - action: utter_bantu_lagi
 
-- story: give name
+# - story: give name
+#   steps:
+#   - intent: give_name
+#     entities:
+#     - name: assabil
+#   - slot_was_set:
+#     - name: assabil
+#   - action: utter_say_name
+
+- story: give data
   steps:
+  - intent: give_data
+  - action: utter_ask_name
   - intent: give_name
     entities:
-    - name: assabil
-  - slot_was_set:
-    - name: assabil
-  - action: utter_say_name
+    - name: Muhammad Rizqi Assabil
+  - action: utter_ask_nim
+  - intent: give_nim
+    entities:
+    - nim: 09021281924065
+  - action: utter_ask_semester
+  - intent: give_semester
+    entities:
+    - semester: 5
+  - action: utter_ask_ipk
+  - intent: give_ipk
+    entities:
+    - ipk: 3.51
+  - action: action_set_data
