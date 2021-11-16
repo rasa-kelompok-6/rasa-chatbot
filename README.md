@@ -10,10 +10,6 @@ unsri chatbot 5000
 
 [Any other OS](https://docs.anaconda.com/anaconda/install/)
 
-## Install Microsoft C++ Build Tools
-
-[Link](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
-
 # Run
 Open anaconda prompt
 
@@ -30,8 +26,6 @@ run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`.
 instead of `pip install rasa`
 
 run 
-
-`pip install --upgrade pip==20.2 --user`,
 
 `pip install rasa==2.8.2`, 
 
@@ -62,5 +56,5 @@ And then open another terminal and do the following:
 
 # TODO
 
-* ~~Add test stories, entitas,slot, custom actions, basis data, dan lainnya untuk menaikan nilai~~ Done, maybe
+* ~~Add test stories, ~~entitas, slot, custom actions~~, basis data, dan lainnya untuk menaikan nilai~~ Done, maybe
 * ~~Host di heroku/ngrok~~ Done
