@@ -20,7 +20,7 @@ Check available environments with `conda info --envs`, or create one with `conda
 Activate with `conda activate 'env-name'`, example `conda activate RasaInstall`
 
 ## If you create a new environment
-run `conda install ujson`, `conda install tensorflow`, and `pip install rasa`.
+run `conda install ujson`, `conda install tensorflow`, `pip install --upgrade pip==20.2 --user`, and `pip install rasa`.
 
 ### If you want to have rasa x
 instead of `pip install rasa`
